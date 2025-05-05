@@ -19,7 +19,7 @@ $ gitops.sh
 services:
   ...
   gitops:
-    image: ghcr.io/alkoclick/docker-compose-gitops:v1.0.0
+    image: ghcr.io/alkoclick/docker-compose-gitops:v1.1.0
     working_dir: /git/path/to/subfolder # Optional. Use it if docker-compose.yml is not in the root
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
