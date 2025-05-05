@@ -1,7 +1,7 @@
-FROM docker/compose:1.24.0
+FROM docker:28.1.1-alpine3.21
 
 RUN apk add --no-cache \
-    git
+    git openssh
 
 WORKDIR /git
 ADD gitops.sh /usr/bin
