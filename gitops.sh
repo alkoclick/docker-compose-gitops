@@ -5,6 +5,8 @@ if [ ! -d .git ]; then
     exit 2
 fi
 
+git config --global --add safe.directory $(pwd)
+
 while true
 do
     git fetch
