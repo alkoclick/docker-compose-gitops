@@ -20,10 +20,11 @@ services:
   ...
   gitops:
     image: ghcr.io/alkoclick/docker-compose-gitops:v1.1.0
-    working_dir: /git/path/to/subfolder # Optional. Use it if docker-compose.yml is not in the root
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./:/git  # Or ../../:/git to map git repo root to /git
+      # You have to match the paths inside and outside the container, otherwise docker compose will detect changes in your volume mounts because it uses absolute paths!
+      - ${PWD}:${PWD}
+    working_dir: ${PWD} # You can add any subpaths you may here as needed
 
 ```
 
