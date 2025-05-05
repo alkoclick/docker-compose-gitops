@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 if [ ! -d .git ]; then
     echo "Error: Current directory (`pwd`) is not a git repository!"
