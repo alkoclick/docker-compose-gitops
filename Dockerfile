@@ -4,6 +4,7 @@ RUN apk add --no-cache \
     git
 
 WORKDIR /git
+RUN git config --global --add safe.directory /git
 ADD gitops.sh /usr/bin
 
 ENTRYPOINT /usr/bin/gitops.sh
