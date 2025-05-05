@@ -1,11 +1,8 @@
 # Docker Compose GitOps
 
-Basic implementation of GitOps paradigm using docker-compose. This program continuously fetch a git repository
-and update docker-compose services.
-
-## Installation
-
-<Todo>
+Basic implementation of GitOps paradigm using docker-compose. 
+This program continuously fetches a git repository
+and updates docker-compose services.
 
 ## Usage
 
@@ -30,7 +27,6 @@ services:
 
 ```
 
-## Next
+## Original project
 
-[ ] Add a parameter to specify update interval
-[ ] Add a parameter to specify remote name
+Credits to zeeke over at: https://github.com/zeeke/docker-compose-gitops
