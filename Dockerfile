@@ -1,7 +1,7 @@
 FROM docker:28.1.1-alpine3.21
 
 RUN apk add --no-cache \
-    git openssh
+    git
 
 WORKDIR /git
 ADD gitops.sh /usr/bin
