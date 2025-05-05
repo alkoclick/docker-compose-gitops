@@ -14,7 +14,7 @@ do
     if [ $LOCAL != $REMOTE ]; then
         git pull origin $(git rev-parse --abbrev-ref HEAD)
 
-        docker-compose up
+        docker-compose up --detach --build --remove-orphans
     fi
 
     sleep 60
